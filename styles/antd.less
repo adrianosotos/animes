@@ -1,0 +1,60 @@
+@import "~antd/dist/antd.less";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #202124;
+}
+
+@primary-color: #f5222d; // primary color for all components
+@link-color: #1890ff; // link color
+@success-color: #52c41a; // success state color
+@warning-color: #faad14; // warning state color
+@error-color: #f5222d; // error state color
+@font-size-base: 14px; // major text font size
+@heading-color: rgb(255, 250, 250); // heading text color
+@text-color: rgb(255, 250, 250);; // major text color
+@text-color-secondary: rgba(0, 0, 0, 0.45); // secondary text color
+@disabled-color: rgba(0, 0, 0, 0.25); // disable state color
+@border-radius-base: 2px; // major border radius
+@border-color-base: #d9d9d9; // major border color
+@box-shadow-base: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08),
+  0 9px 28px 8px rgba(0, 0, 0, 0.05); // major shadow for layers
+
+.ant-pagination {
+  margin: auto;
+  display: block;
+  width: fit-content;
+  padding-bottom: 32px;
+
+  li {
+    background: #303134;
+
+    button {
+      background: #303134 !important;
+    }
+
+    span, svg {
+      color: #fff !important;
+    }
+  }
+}
+
+.ant-input-search {
+  width: 70%;
+  margin: auto;
+  display: block;
+
+  input {
+    height: 50px;
+    background: #303134;
+    font-size: 20px;
+  }
+
+  button {
+    height: 50px;
+  }
+}
