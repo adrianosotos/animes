@@ -1,9 +1,10 @@
+import '../styles/video.less'
+
 export default function Video ({ videoId }) {
   return (
     <div>
-      <iframe 
-        width="100%"
-        height="450px"
+      <iframe
+        className="trailer-video"
         src={`https://www.youtube.com/embed/${videoId}?controls=0`}
         title="YouTube video player"
         frameBorder="0"
