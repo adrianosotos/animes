@@ -8,23 +8,31 @@ import Link from 'next/link'
 export default function AnimePage ({ anime }) {
   console.log(anime)
   return (
-    <div className="container">
-      <div className="image-container">
+    <>
+      <div className="container">
         <Link href="/">
           <ArrowLeftOutlined className="back-arrow" />
         </Link>
-        <Image 
-          src={anime.attributes.posterImage.small}
-          alt="anime-cover"
-          loader={() => anime.attributes.posterImage.small}
-          width="284"
-          height="402"
-        />
+        <div className="anime-content">
+          <div className="midia-container">
+            <Video videoId={anime.attributes.youtubeVideoId}/>
+          </div>
+          <div className="content">
+            <h1 className="anime-title">{anime.attributes.titles.en}</h1>
+            <p className="anime-description">{anime.attributes.description}</p>
+          </div>
+        </div>
+        <div className="image-container">
+          <Image 
+            src={anime.attributes.posterImage.small}
+            alt="anime-cover"
+            loader={() => anime.attributes.posterImage.small}
+            width="284"
+            height="402"
+          />
+        </div>
       </div>
-      <h1 className="anime-title">{anime.attributes.titles.en}</h1>
-      <p className="anime-description">{anime.attributes.description}</p>
-      <Video videoId={anime.attributes.youtubeVideoId}/>
-    </div>
+    </>
   )
 }
 
