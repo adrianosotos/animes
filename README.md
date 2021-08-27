@@ -1,6 +1,6 @@
 # Animes
 
-This a anime app which lists animes based on a searched query and also offers a page with more information about the selected anime.
+This an anime app which lists animes based on a searched query and also offers a page with more information about the selected anime.
 
 Live: https://animes-mu.vercel.app/
 
