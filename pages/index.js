@@ -54,7 +54,7 @@ export default function Home () {
               <Col span={24}>
                 <Search 
                   className="input"
-                  placeholder="Busque animes"
+                  placeholder="Search animes"
                   enterButton
                   onSearch={fetchAnimeApi}
                 />
