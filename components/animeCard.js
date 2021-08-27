@@ -1,9 +1,8 @@
 import Image from 'next/image'
-import '../styles/animeCard.less'
 
 export default function AnimeCard ({ anime }) {
   return (
-    <div>
+    <div className="anime-card-container">
       <div className="image-container">
         <Image 
           src={anime.attributes.posterImage.small}

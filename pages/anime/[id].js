@@ -1,14 +1,11 @@
 import Axios from 'axios'
 import Image from 'next/image'
 import Video from '../../components/video'
-import '../../styles/animePage.less'
 import { ArrowLeftOutlined } from '@ant-design/icons'
 import { Row, Col } from 'antd';
 import Link from 'next/link'
-import '../../styles/antdCustom.less'
 
 export default function AnimePage ({ anime }) {
-  console.log(anime)
   return (
     <>
       <Image 
@@ -18,20 +15,10 @@ export default function AnimePage ({ anime }) {
         width="3360"
         height="800"
       />
-      <div className="container">
+      <div className="anime-page-container">
         <Link href="/">
           <ArrowLeftOutlined className="back-arrow" />
         </Link>
-
-        {/* <div className="image-container">
-          <Image 
-            src={anime.attributes.posterImage.small}
-            alt="anime-cover"
-            loader={() => anime.attributes.posterImage.small}
-            width="284"
-            height="402"
-          />
-        </div> */}
         <div className="anime-content">
           <Row>
             <Col xl={12} md={8} xs={24}>

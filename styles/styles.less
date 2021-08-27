@@ -1,6 +1,99 @@
+@import "~antd/lib/style/themes/default.less";
+
+//@import "~antd/dist/antd.less";
+
+@primary-color: #f5222d;
+@link-color: #1890ff; //
+@font-size-base: 14px; // major text font size
+@heading-color: rgb(255, 250, 250); // heading text color
+@text-color: rgb(255, 250, 250); // major text color
+@disabled-color: rgba(0, 0, 0, 0.25); // disable state color
+@border-radius-base: 2px; // major border radius
+@border-color-base: #d9d9d9; // major border color
 @mobile: ~"only screen and (min-width: 320px) and (max-width: 991px)";
 
-.container {
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #202124;
+}
+
+.ant-pagination {
+  margin: auto;
+  display: block;
+  width: fit-content;
+  padding-bottom: 32px;
+
+  li {
+    background: #303134;
+
+    button {
+      background: #303134 !important;
+    }
+
+    span, svg {
+      color: #fff !important;
+    }
+  }
+}
+
+.ant-input-search {
+  width: 70%;
+  margin: auto;
+  display: block;
+
+  input {
+    height: 50px;
+    background: #303134;
+    font-size: 20px;
+  }
+
+  button {
+    height: 50px;
+  }
+}
+
+.home-container {
+  margin: auto;
+  width: 95%;
+
+  .input-container {
+    margin: 48px 0;
+  }
+
+  .no-results {
+    margin: 300px auto;
+  }
+}
+
+.anime-card-container {
+  .image-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .animecard-title {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+}
+
+.video-container {
+  .trailer-video {
+    width: 530px;
+    height: 450px;
+  
+    @media @mobile {
+      width: 100%;
+      height: 300px;
+    }
+  }
+}
+
+.anime-page-container {
   width: 90%;
   margin: 100px auto;
   padding-bottom: 50px;
@@ -12,10 +105,13 @@
     top: 30px;
     left: 30px;
     cursor: pointer;
+    background: #fff;
   
     svg {
       width: 25px;
       height: 25px;
+      color: #202124;
+      margin-top: 3px;
     }
   
     svg:hover {

@@ -1,8 +1,6 @@
-import '../styles/video.less'
-
 export default function Video ({ videoId }) {
   return (
-    <div>
+    <div className="video-container">
       <iframe
         className="trailer-video"
         src={`https://www.youtube.com/embed/${videoId}?controls=0`}
