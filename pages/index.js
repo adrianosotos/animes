@@ -1,7 +1,5 @@
 import Head from 'next/head'
-import 'antd/dist/antd.css';
 import { Input, Row, Col, Pagination } from 'antd';
-import "../styles/antd.less";
 import "../styles/home.less"
 import Axios from 'axios'
 import { useState } from 'react';
