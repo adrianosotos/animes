@@ -5,6 +5,7 @@ import '../../styles/animePage.less'
 import { ArrowLeftOutlined } from '@ant-design/icons'
 import { Row, Col } from 'antd';
 import Link from 'next/link'
+import '../../styles/antd.less'
 
 export default function AnimePage ({ anime }) {
   console.log(anime)
