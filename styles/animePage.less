@@ -23,15 +23,24 @@
     }
   }
 
-  .anime-content {
+  .image-container {
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    margin-bottom: 100px;
+    align-items:flex-start;
+    width: 60%;
+    justify-content: flex-start;
+    margin-bottom: 24px;
 
+    @media @mobile {
+      justify-content: center;
+      margin: auto;
+    }
+  }
+
+  .anime-content {
+    margin-bottom: 48px
+    ;
+    
     .content {
-      width: 40%;
-
       @media @mobile {
         width: 100%;
       }
@@ -48,7 +57,7 @@
       }
 
       .anime-description {
-        margin: 48px 0;
+        margin: 48px 10px;
         font-size: 15px;
       }
     }
@@ -56,7 +65,6 @@
     .midia-container {
       display: flex;
       align-items: center;
-      width: 60%;
       margin: auto;
       justify-content: center;
 
@@ -70,15 +78,18 @@
     }
   }
 
-  .image-container {
-    display: flex;
-    align-items:flex-start;
-    width: 60%;
-    justify-content: flex-start;
-
-    @media @mobile {
-      justify-content: center;
-      margin: auto;
+  .anime-aditional-info {
+    .image-container {
+      display: flex;
+      align-items:flex-start;
+      width: 60%;
+      justify-content: flex-start;
+      margin-bottom: 24px;
+  
+      @media @mobile {
+        justify-content: center;
+        margin: auto;
+      }
     }
   }
 }
